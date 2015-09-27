@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Vishal Agarwal's Homepage</title>
+
+<!-- Including Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Including Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Making provisions for mobile phones-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Including the style sheet -->
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<script>
+
+/* 
+ * Functions to animate scrolling
+ * Source: https://css-tricks.com/snippets/jquery/smooth-scrolling/ 
+*/
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+$(window).scroll(function(){
+  $("#navigation").stop().animate({"marginTop": ($(window).scrollTop()+25) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, 1000 );
+});
+
+</script>
+
+</head>
+
+<body>
+	<div class="flex-container">
+		<!-- Left content panels -->
+		<div class="container flex-item-wide">
+	  		<div class="row" id="about">
+	    		<div class="panel panel-info">
+				  	<div class="panel-heading">
+				    	<h3 class="panel-title">Welcome to my Webpage</h3>
+				  	</div>
+				  	<div class="panel-body">
+				    	<p>
+				    	I am a 21 years old student born and brought up in the city of Mumbai (India)<br>
+				    	I hail from a Marwari community which originated from Rajasthan (India)<br>
+							<br>
+				    	This webpage is aimed to highlight some aspects of my life<br>
+				    	<br>
+				    	I love interacting with people, so feel free to ping me to know more about me<br></p>
+				  	</div>
+					</div>
+	  		</div>
+	  		<div class="row" id="qualification">
+	    		<div class="panel panel-info">
+				  	<div class="panel-heading">
+				    	<h3 class="panel-title">Qualification</h3>
+				  	</div>
+				  	<div class="panel-body">
+				  		<p>Graduation: B.Tech Computer Science<br>
+				  				IIT Bombay 2012-2016<br>
+				  				Current CGPA - 9.39/10.00<br>
+				  				<br>
+				  			 Intermediate: HSC<br>
+				  			 	PACE Junior Science College<br>
+				  			 	Performance - 92.7%<br>
+				  		</p>
+				  		<br>
+				  		<p> My Curriculum Vitae can be found <a href="CV_Vishal_Agarwal.pdf">here</a></p>
+				  	</div>
+					</div>
+	  		</div>
+	  		<div class="row" id="research">
+	    		<div class="panel panel-info">
+				  	<div class="panel-heading">
+				    	<h3 class="panel-title">Research Interests</h3>
+				  	</div>
+				  	<div class="panel-body">
+				    	<p>Image processing, computer vision	and machine learning<br>
+				    	<br>
+				    	Undergraduate Thesis: Image based CAPTCHA<br>
+				    	Guided by Prof. Ajit Rajwade<br>
+				    	2015-2016<br>
+				    	<br>
+				    	Project: Dictionary Learning For Medical Image Processing<br>
+				    	Guided By Prof. Suyash Awate<br>
+				    	2015-2016<br></p>
+				  	</div>
+					</div>
+	  		</div>
+	  		<div class="row" id="extracurric">
+	    		<div class="panel panel-info">
+				  	<div class="panel-heading">
+				    	<h3 class="panel-title">Extracurricular Activities</h3>
+				  	</div>
+				  	<div class="panel-body">
+				    	<p>Playing Table Tennis:<br>
+				    		Member of the National Sports Organization 2012-2013<br>
+				    		<br>
+				    		Reading Novels:<br>
+				    		I would strongly recommend Prisoner Of Birth by Jeffery Archer &amp;<br>
+				    		The God Father by Mario Puzo<br>
+				    		<br>
+				    		Listening to Music:<br>
+				    		Favourite band - Maroon 5<br>
+				    		Old Bollywood songs<br>
+				    	</p>
+				  	</div>
+					</div>
+	  		</div>
+	  		<div class="row" id="contact">
+	    		<div class="panel panel-info">
+				  	<div class="panel-heading">
+				    	<h3 class="panel-title">Contact Information</h3>
+				  	</div>
+				  	<div class="panel-body">
+				  		<p> Room Number 139, Hostel Number 5,<br>
+				  			IIT Bombay, Powai,<br>
+				  			Mumbai - 400076,<br>
+				  			India.
+				  		</p>
+				  		Mobile Number +91 9820666767<br>
+				  		<br>
+				    	<a target="_blank" href="mailto:vishalagarwal3010@gmail.com"><img src="gmail-icon.svg" alt="Gmail" width="60" height="60"></a>
+				    	<a target="_blank" href="https://www.facebook.com/vishal.agarwal.3344"><img src="facebook-icon.jpg" alt="Facebook" width="60" height="60"></a>
+				    	<a target="_blank" href="https://twitter.com/Vishal18Agarwal"><img src="twitter-icon.png" alt="Twitter" width="60" height="60"></a>
+				  	</div>
+					</div>
+	  		</div>
+		</div>
+		<!-- Navigation panel -->
+		<div class="panel panel-default flex-item navigation-panel" id="navigation">
+		  	<div class="panel-body">
+	  			<img src="VishalAgarwal.jpg" alt="Photo of Vishal Agarwal" class="img-circle" width="150px" height="150px"><br>
+	  			<p> Vishal Agarwal </p>
+	  			<a href="#about" class="btn btn-info" role="button">About</a><br>
+	  			<a href="#qualification" class="btn btn-info" role="button">Qualification</a>
+	  			<a href="#research" class="btn btn-info" role="button">Research</a><br>
+	  			<a href="#extracurric" class="btn btn-info" role="button">Extracurricular</a>
+	  			<a href="#contact" class="btn btn-info" role="button">Contact</a><br>
+	  	</div>
+		</div>
+	</div>
+	<!-- Copyright -->
+	<div class="panel panel-default copyright-panel">
+  	<div class="panel-body">
+  		<p>Any feedback would be greatly appreciated</p>
+  		<p>Design by Vishal Agarwal</p>
+  		<p>Copyright &copy; 2015 Vishal Agarwal</p>
+  	</div>
+	</div>
+</body>
+
+</html>
