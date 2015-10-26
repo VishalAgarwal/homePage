@@ -16,6 +16,7 @@
 }
 
 .navigation-panel {
+	display: flex;
 	height: 370px;
 	text-align: center;
 	border: solid;

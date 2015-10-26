@@ -33,16 +33,12 @@ $(function() {
         $('html,body').animate({
           scrollTop: target.offset().top
         }, 1000);
+        $("#navigation").stop().animate({"marginTop": target.offset().top + 25}, 1000 );
         return false;
       }
     }
   });
 });
-
-$(window).scroll(function(){
-  $("#navigation").stop().animate({"marginTop": ($(window).scrollTop()+25) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, 1000 );
-});
-
 </script>
 
 </head>
@@ -211,7 +207,7 @@ $(window).scroll(function(){
 	  		</div>
 		</div>
 		<!-- Navigation panel -->
-		<div class="panel panel-default flex-item navigation-panel" id="navigation">
+		<div class="row panel panel-default flex-item navigation-panel" id="navigation">
 		  	<div class="panel-body">
 	  			<img src="VishalAgarwal.jpg" alt="Photo of Vishal Agarwal" class="img-circle" width="150px" height="150px"><br>
 	  			<p> Vishal Agarwal </p>
